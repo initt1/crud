@@ -1,5 +1,7 @@
-const changeThemeBtn = document.querySelector("#change-theme")
+const $html = document.querySelector(' html ')
 
-changeThemeBtn.addEventListener("change", function(){
-    document.body.classList.toggle("dark")
+const $checkbox = document.querySelector('#chk')
+
+$checkbox.addEventListener('change', function(){
+    $html.classList.toggle('clown-mode')
 })
