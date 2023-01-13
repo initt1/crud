@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraftia');
+
+@keyframes float {
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
 
 :root{
     --sombra: rgba(0, 0, 0, 0.753);
 
     --bg-principal: rgb(23, 26, 20);
 
-    --tx-clownInf: rgb(211, 243, 170);
+    --tx-clownInf: rgb(211, 243, 170); /*rgb(23, 26, 20)*/
 
     --bg-card: rgb(45, 52, 39);
     --tx-loginC: rgb(216, 166, 108);
@@ -21,26 +34,42 @@
 }
 
 .clown-mode:root{
-    --sombra: rgba(0, 0, 0, 0.753);
+    --sombra: rgba(228, 169, 218, 0.753);
 
-    --bg-principal: rgb(204, 201, 197);
+    --bg-principal: #a74a6e;
 
-    --tx-clownInf: rgb(51, 72, 131);
+    --tx-clownInf: rgb(210, 231, 15);
 
-    --bg-card: rgb(236, 211, 213);
-    --tx-loginC: rgb(197, 181, 158);
-    --bg-inputC: rgb(173, 181, 197);;
-    --tx-preenchimento: rgb(252, 255, 27);
-    --label: rgb(51, 72, 131);
-    --placeholder: rgb(112, 136, 131);
+    --bg-card: #F9A8C7;
+    --tx-loginC: #FDFFE9;
+    --bg-inputC: #FCFCA4;
+    --tx-preenchimento: #7D1E34;
+    --label: rgb(214, 10, 61);
+    --placeholder: #F5CB5F;
 
-    --bg-botao: rgb(197, 181, 158);
-    --sombra-botao: rgb(51, 72, 131);
-    --tx-botao: rgb(236, 211, 213);
+    --bg-botao: #8F4031;
+    --sombra-botao: rgb(58, 16, 33);
+    --tx-botao: #FDFFE9;
 }
 
 body *{
     box-sizing: border-box;
+}
+
+.lbl{
+    position: relative;
+    top: 55px;
+    margin-left: 10px;
+}
+
+.botao{
+    display: none;
+}
+
+.baloes{
+    width: 70px;
+    cursor: pointer;
+    animation: float 2s ease-in-out infinite;
 }
 
 .main-login{
@@ -53,6 +82,8 @@ body *{
     justify-content: center;
     align-items: center;
     transition: 0.3s;
+
+    
 }
 
 .right{
@@ -67,6 +98,10 @@ body *{
 .left{
     width: 60vw;
     height: 100vh;
+
+    margin-bottom: 130px;
+    margin-left: 30px;
+    
     display: flex;
     justify-content: center;
     align-items: center;

@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Clown</title>
 </head>
 <body>
     <div class="main-login">
         <div class="left">
-            <label for="chk">
-                <input type="checkbox" id="chk"/> Clown Mode
-            </label>
+            <label class="lbl">
+                <input class="botao" type="checkbox" id="chk"/> 
+                <img id="baloes" class="baloes" src="/imagens/loggo.png" onclick="toggleTheme()">
+            </label>    
                 <h1>Clown Info<br>
                 Being a Clown isn't easy</h1>
             <img src="https://media.discordapp.net/attachments/989981120978366554/1045702432816119898/unknown.png?width=993&height=559" class="left-login-image" alt="clown">
@@ -36,5 +37,6 @@
         </div>
     </div>
     <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html>
